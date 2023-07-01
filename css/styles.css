@@ -1,0 +1,134 @@
+body {
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.attribution {
+    display: none;
+    bottom: 5%;
+}
+
+h3 > a{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 2rem 0 .8rem 0;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+h3 > a:hover {
+    color: #00fffc;
+}
+
+p, span {
+ color: #7490b5; 
+ font-weight: 300;  
+}
+
+.nft-card {
+    display: inline-block;
+    width: 22vw;
+    max-width: 300px;
+    min-width: 250px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.nft-image-container {
+    position: relative;
+}
+
+.nft-image {
+    max-width: 100%;
+    border-radius: 10px;
+    padding: 0;
+}
+
+.nft-image-overlay {
+    max-height: fit-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    background-color: #00fffb81;
+    opacity: 0;
+    transition: opacity .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.nft-image-overlay:hover {
+    opacity: 1;
+}
+
+.nft-card-description {
+    margin: 1rem 0 2rem 0;
+}
+
+.nft-creator {
+    display: flex;
+    align-items: center;
+}
+
+.nft-creator-image {
+    width: 2rem;
+    height: 2rem;
+    max-width: 100%;
+    border-radius: 50%;
+    border: solid 1px white;
+}
+
+.creator-description {
+    margin-left: 1rem;
+    font-size: .9rem;
+}
+
+.creator-name {
+    color: white;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+.creator-name:hover {
+    color: #00fffc;
+}
+
+.price-time {
+    display: flex;
+    justify-content:space-between;
+}
+
+.time-left-icon, .price-icon {
+    height: 1.2rem;
+}
+
+.price, .time-left {
+    display: flex;
+    align-items: center;
+}
+
+.price-text, .time-left-text {
+    margin-left: .5rem;
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.price-text {
+    color: #00fffc;
+}
+
+.nft-card-line {
+    border: solid .5px hsl(215, 32%, 27%);
+    margin: .8em 0; 
+    
+}

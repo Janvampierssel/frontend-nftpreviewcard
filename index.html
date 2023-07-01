@@ -4,8 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/styles.css">
+
   <title>Frontend Mentor | NFT preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,18 +20,81 @@
 </head>
 <body>
 
-  Equilibrium #3429
+  <main>
+    <div class="nft-card">
 
-  Our Equilibrium collection promotes balance and calm.
+      <div class="nft-image-container">
+        <a href="#">
+          <img src="images/image-equilibrium.jpg" alt="NFT" class="nft-image">
+          <div class="nft-image-overlay"><img src="images/icon-view.svg" alt="View Icon" class="nft-image-overlay-icon"></div>
+        </a>
+      </div>
+      <h3><a href="#">Equilibrium #3429</a></h3>
 
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
+      <p class="nft-card-description">Our Equilibrium collection promotes balance and calm.</p>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <div class="price-time">
+        <div class="price">
+          <img src="images/icon-ethereum.svg" alt="Ethereum Price" class="price-icon">
+          <span class="price-text">0.041 ETH</span>
+        </div>
+        <div class="time-left">
+          <img src="images/icon-clock.svg" alt="Time Left" class="time-left-icon">
+          <span class="time-left-text">3 days left</span>
+        </div>
+      </div>
+
+      <div class="nft-card-line"></div>
+
+      <div class="nft-creator">
+        <img src="images/image-avatar.png" alt="Avator of NFT creator" class="nft-creator-image">
+        <p class="creator-description">Creation of <a href="#" class="creator-name">Jules Wyvern</a></p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
+
 </body>
 </html>
+
+<!--
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 18px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600
+-->
