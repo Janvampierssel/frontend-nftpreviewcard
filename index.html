@@ -1,66 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
 
-  <title>Frontend Mentor | NFT preview card component</title>
+    <title>Frontend Mentor | NFT preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  <main>
-    <div class="nft-card">
-
-      <div class="nft-image-container">
-        <a href="#">
-          <img src="images/image-equilibrium.jpg" alt="NFT" class="nft-image">
-          <div class="nft-image-overlay"><img src="images/icon-view.svg" alt="View Icon" class="nft-image-overlay-icon"></div>
-        </a>
-      </div>
-      <h3><a href="#">Equilibrium #3429</a></h3>
-
-      <p class="nft-card-description">Our Equilibrium collection promotes balance and calm.</p>
-
-      <div class="price-time">
-        <div class="price">
-          <img src="images/icon-ethereum.svg" alt="Ethereum Price" class="price-icon">
-          <span class="price-text">0.041 ETH</span>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="nft-card">
+        <div class="nft-image-container">
+          <a href="#">
+            <img
+              src="images/image-equilibrium.jpg"
+              alt="NFT"
+              class="nft-image"
+            />
+            <div class="nft-image-overlay">
+              <img
+                src="images/icon-view.svg"
+                alt="View Icon"
+                class="nft-image-overlay-icon"
+              />
+            </div>
+          </a>
         </div>
-        <div class="time-left">
-          <img src="images/icon-clock.svg" alt="Time Left" class="time-left-icon">
-          <span class="time-left-text">3 days left</span>
+        <h3><a href="#">Equilibrium #3429</a></h3>
+
+        <p class="nft-card-description">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+
+        <div class="price-time">
+          <div class="price">
+            <img
+              src="images/icon-ethereum.svg"
+              alt="Ethereum Price"
+              class="price-icon"
+            />
+            <span class="price-text">0.041 ETH</span>
+          </div>
+          <div class="time-left">
+            <img
+              src="images/icon-clock.svg"
+              alt="Time Left"
+              class="time-left-icon"
+            />
+            <span class="time-left-text">3 days left</span>
+          </div>
+        </div>
+
+        <div class="nft-card-line"></div>
+
+        <div class="nft-creator">
+          <img
+            src="images/image-avatar.png"
+            alt="Avator of NFT creator"
+            class="nft-creator-image"
+          />
+          <p class="creator-description">
+            Creation of <a href="#" class="creator-name">Jules Wyvern</a>
+          </p>
         </div>
       </div>
+    </main>
 
-      <div class="nft-card-line"></div>
-
-      <div class="nft-creator">
-        <img src="images/image-avatar.png" alt="Avator of NFT creator" class="nft-creator-image">
-        <p class="creator-description">Creation of <a href="#" class="creator-name">Jules Wyvern</a></p>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Jan van Ierssel</a>.
       </div>
-    </div>
-  </main>
-
-  <footer>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Jan van Ierssel</a>.
-    </div>
-  </footer>
-
-</body>
+    </footer>
+  </body>
 </html>
 
 <!--
